@@ -210,7 +210,7 @@ def combat(player, enemy):
 
 # Main game loop with choices and paths
 def main_game():
-    print("\n--- Welcome to the Dark Steampunk Adventure ---")
+    print("\n--- Ready player one ---")
     player_class = choose_character_class()
     player = Player(player_class)
     print(f"\nYou are a {player_class.name} with starting gear equipped.")
@@ -230,7 +230,7 @@ def main_game():
             player.level += 1
             player.health = player.max_health  # Restore health after each stage
         else:
-            print("\nYou failed to complete your journey.")
+            print("\nYou have died your journey was well fought but now you must leave the throne to another")
             break
     else:
         print("\n--- Victory! You have completed your steampunk odyssey! ---")
